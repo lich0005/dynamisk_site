@@ -9,13 +9,26 @@ body {
   margin-right: 2rem;
 }
 
+/* // <weight>: Use a value from 200 to 1000
+// <uniquifier>: Use a unique and descriptive class name
+
+.mulish-<uniquifier> {
+  font-family: "Mulish", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
 h3,
 h4,
 p,
-a {
-  font-family: Arial, Helvetica, sans-serif;
+a,
+ul,
+td {
+  font-family: "Mulish", serif;
   padding: 0.3rem;
   font-weight: 300;
+  line-height: 1.5rem;
 }
 
 a {
@@ -24,7 +37,7 @@ a {
 
 h2 {
   padding-bottom: 2rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Mulish", serif;
   font-size: 2rem;
 }
 
@@ -50,7 +63,7 @@ header {
 
 .category_list_container a {
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Mulish", serif;
   font-size: 1.3rem;
   padding: 1.5rem;
   color: whitesmoke;
@@ -59,11 +72,25 @@ header {
 
 /*************produktliste********************/
 
+.søg {
+  display: flex;
+  justify-content: space-between;
+}
+
+#searchBar {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #727272;
+  border-radius: 10px;
+  color: #000000;
+  width: 12rem;
+}
+
 .card {
   position: relative;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  border: solid 1px rgb(92, 92, 92);
+  border: solid 1px rgb(164, 164, 164);
 }
 
 img {
@@ -98,7 +125,7 @@ img {
   /* display: flex; */
   padding: 0.5rem;
   margin-right: 0.5rem;
-  background-color: rgb(243, 246, 57);
+  background-color: rgb(249, 228, 34);
   font-weight: 600;
 }
 
@@ -155,13 +182,28 @@ img {
   }
 }
 
+.price_single h3 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+.price_single {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grey {
+  color: #727272;
+}
+
 /* Styling for the sizing container */
 .sizing {
   margin-top: 4rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  font-family: Arial, sans-serif;
+  font-family: "Mulish", serif;
 }
 
 /* Style the label */
@@ -170,6 +212,7 @@ img {
   font-weight: 300;
   margin-bottom: 0.5rem;
   color: rgb(81, 81, 81);
+  font-family: "Mulish", serif;
 }
 
 /* Style the select element */
@@ -182,6 +225,7 @@ img {
   color: #333;
   transition: all 0.3s ease;
   width: 8rem; /* Make it responsive */
+  font-family: "Mulish", serif;
 }
 
 .sizing select:focus {
@@ -201,6 +245,7 @@ img {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
   align-self: flex-start; /* Aligns it to the left */
+  font-family: "Mulish", serif;
 }
 
 /* Button hover state */
