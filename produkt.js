@@ -11,10 +11,8 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
 function showProduct(data) {
   productContainer.innerHTML = `   
      <div class="product-image">
-        <img src="https://kea-alt-del.dk/t7/images/webp/640/${data.id}.webp" alt="pic2">
-        <div class="sold_out ${data.soldout ? "vis" : ""}">
-            <h3>Sold Out</h3>
-        </div>
+        <img src="https://kea-alt-del.dk/t7/images/webp/640/${data.id}.webp" alt="product image">
+          <h3 class="sold_out ${data.soldout ? "vis" : ""}">Sold Out</h3>
     </div>
 
             
