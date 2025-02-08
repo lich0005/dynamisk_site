@@ -9,11 +9,12 @@ let allProducts = []; // Store all products for filtering
 
 overskrift.innerHTML = myCategory;
 
-fetch(`https://kea-alt-del.dk/t7/api/products?category=${myCategory}`) //hvis jeg skriver ?limit=100  bag på får jeg 100 produkter i visning
-  .then((response) => response.json())
+fetch(`https://kea-alt-del.dk/t7/api/products?category=${myCategory}`) //hvis jeg skriver ?limit=100 bag på får jeg 100 produkter i visning
+  .then((response) => response.json()) // Convert API response to JSON
   .then((data) => {
+    // we call the fetched data "data". data is now an array of products
     allProducts = data; // Save all products
-    showList(data); // Show all products initially
+    showList(data); // Show all products initially. Her bruges showList funktionen, som er defineret lige forneden
   });
 
 function showList(products) {
